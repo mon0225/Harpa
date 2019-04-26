@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="HDE Professional Services" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="HDE Harpa Analytics Analitica" />
+    <meta name="description" content="HDE - software de analítica" />
+
+    <!-- title  -->
+    <title>Harpa-home</title>
+
+    <!-- Estilo -->
+    <link rel="stylesheet" href="../../css/plugins.css" />
+    <link rel="stylesheet" href="../../search/search.css" />
+    <link href="../../css/styles.css" rel="stylesheet" id="colors" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+
+    <!-- Códigos -->
+    <link rel="stylesheet" href="../../lib/codemirror/codemirror.css">
+    <script src="../../lib/codemirror/codemirror.js"></script>
+    <script src="matchbrackets.js"></script>
+    <script src="../python.js"></script>
+    <script src="../http.js"></script>
+
+</head>
+
+
+<body>
+
+    <header>
+
+            <div class="navbar-default">
+
+                <!-- start top search -->
+                <div class="top-search bg-theme">
+                    <div class="container">
+                        <form class="search-form" action="search.html" method="GET" accept-charset="utf-8">
+                            <div class="input-group">
+                                <span class="input-group-addon cursor-pointer">
+                                    <button class="search-form_submit fas fa-search font-size18 text-white" type="submit"></button>
+                                </span>
+                                <input type="text" class="search-form_input form-control margin-10px-lr" name="s" autocomplete="off" placeholder="Type & hit enter...">
+                                <span class="input-group-addon close-search"><i class="fas fa-times font-size18 margin-5px-top"></i></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end top search -->
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-12">
+                            <div class="menu_area alt-font">
+                                <nav class="navbar navbar-expand-lg navbar-light no-padding">
+
+                                    <div class="navbar-header navbar-header-custom">
+                                        <!-- start logo -->
+                                        <a href="harpa-home.html" class="navbar-brand"><img id="logo" src="HDE02.svg" alt="logo" width="170px" height="500px"></a>
+                                        <!-- end logo -->
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- end header section -->
+
+        <!-- start page title section -->
+        <section class="page-title-section bg-img cover-background theme-overlay" data-overlay-dark="7" data-background="img/banner/bg9.jpg">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Harpa</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end page title section -->
+        
+
+        <!-- start project detail section -->
+        <section>
+            <div class="container">
+                <div class="project-single">
+                    <div class="row project-single-text margin-50px-tb sm-margin-30px-top sm-margin-50px-bottom xs-margin-30px-bottom">
+                        <div class="col-lg-7 col-md-12">
+                            <h4 class="text-center">Acerca de Harpa</h4>
+                            <p ALIGN="justify">
+                                Sistema integrado por un <b>conjunto de microservicios (API's)</b> con funcionalidad analítica, dividida en tres servicios:
+                            </p>
+                            
+                            <table class="table table-center table-hover table-responsive-md table-bordered">
+                                <thead class="text-center thead-dark">
+                                    <tr>
+                                      <th scope="col">N°</th>
+                                      <th scope="col">Microservicio</th>
+                                      <th scope="col">Link</th>
+                                      <!--<th scope="col">Glosario</th>-->
+                                    </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                    <tr>
+                                        <th scope="row" style="padding-top: 25px"><a href="HCluster.html"><strong>1</strong></a></th>
+                                        <td><a href="HCluster.html">HCluster <br>(Clusterización)</a></td>
+                                        <td style="padding-top: 25px"><a href="HCluster.html"><i class="far fa-object-group fa-2x"></i></a></td>
+                                    </tr>
+                                     <tr>
+                                      <th scope="row" style="padding-top: 25px"><strong><a href="HRegLinSimple.html">2</a></strong></th>
+                                      <td><a href="HRegLinSimple.html">HRegLinSimple <br>(Regresión lineal simple)</a></td>
+                                      <td style="padding-top: 25px"><a href="HRegLinSimple.html"><i class="fas fa-chart-line fa-2x"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <th class="text-center" scope="row" style="padding-top: 25px"><a href="HRegLinMultiple.html">3</a></th>
+                                      <td class="text-center"><a href="HRegLinMultiple.html">HRegLinMúltiple <br>(Regresión lineal múltiple)</a></td>
+                                      <td style="padding-top: 25px"><a href="HRegLinMultiple.html"><i class="far fa-chart-bar fa-2x"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <th class="text-center" scope="row" style="padding-top: 25px"><a href="HTransfV.html">4</a></th>
+                                      <td class="text-center"><a href="HTransfV.html">HTransfV <br>(Transformación de variable)</a></td>
+                                      <td style="padding-top: 25px"><a href="HTransfV.html"><i class="far fa-chart-bar fa-2x"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                        </div>
+                    <div class="col-lg-4 col-md-4 offset-lg-1">
+                        <h4 class="text-center">Aréas de conocimiento</h4>
+                        <div class="project-single-info">
+                            <ul class="no-margin">
+                                <li><span class="value"><i class="fas fa-check"></i> Minería de datos.</span></li>
+                                <li><span class="value"><i class="fas fa-check"></i> Machine Learning.</span></li>
+                                <li><span class="value"><i class="fas fa-check"></i> Deep Learning.</span>
+                                    <!--<br><ul class="margin-60px-left">
+                                        <li><medium>Uso de API.</medium></li>
+                                        <li><medium>Algoritmo de K-means.</medium></li>
+                                        <li><medium>Lenguajes de programación.</medium></li>
+                                    </ul>-->
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                            <h4 class="text-center">Características</h4>
+                            <div class="project-single-info">
+                                <ul class="no-margin">
+                                    <li><span class="vertical-align-top">Tipo de servicio:</span> <span class="value">WEB API</span></li>
+                                    <!--<li><span class="vertical-align-top">URL Base:</span> <span class="value">harpa.hde.mx/harpa<br></span></li>-->
+                                    <li><span class="vertical-align-top">Métodos:</span><span class="value">HTTP POST</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- start footer section -->
+    <footer>
+        <div class="container">
+            <p class="xs-font-size13" ALIGN="right"> Versión - 1.2</p>
+            <p class="xs-font-size13" ALIGN="right"> Fecha última actualización - 15/04/2019</p>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <p class="xs-font-size13">&copy; 2019 HDE Professional Services - Harpa</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+    <!-- start scroll to top -->
+    <a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+    <!-- end scroll to top -->
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.min.js"></script>
+
+    <!-- modernizr js -->
+    <script src="../../js/modernizr.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- scrollIt -->
+    <script src="../../js/scrollIt.min.js"></script>
+
+    <!-- Serch -->
+    <script src="../../js/search/search.js"></script>
+
+    <!-- navigation -->
+    <script src="../../js/nav-menu.js"></script>
+
+    <!-- tab -->
+    <script src="../../js/easy.responsive.tabs.js"></script>
+
+    <!-- owl carousel -->
+    <script src="../../js/owl.carousel.js"></script>
+
+    <!-- jquery.counterup.min -->
+    <script src="../../js/jquery.counterup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="../../js/jquery.stellar.min.js"></script>
+
+    <!-- waypoints js -->
+    <script src="../../js/waypoints.min.js"></script>
+
+    <!-- tab js -->
+    <script src="../../js/tabs.min.js"></script>
+
+    <!-- countdown js -->
+    <script src="../../js/countdown.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="../../js/jquery.magnific-popup.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="../../js/isotope.pkgd.min.js"></script>
+
+    <!-- wow js -->
+    <script src="../../js/wow.js"></script>
+
+    <!-- map js -->
+    <script src="../../js/map.js"></script>
+
+    <!-- custom scripts -->
+    <script src="../../js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+    <!-- contact form scripts -->
+    <script src="../../js/mailform/jquery.form.min.js"></script>
+    <script src="../../js/mailform/jquery.rd-mailform.min.c.js"></script>
+
+    <!-- all js include end -->
+
+</body>
+
+</html>
