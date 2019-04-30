@@ -45,9 +45,7 @@
 
         <!-- start header section -->
         <header>
-
             <div class="navbar-default">
-
                 <!-- start top search -->
                 <div class="top-search bg-theme">
                     <div class="container">
@@ -56,7 +54,7 @@
                                 <span class="input-group-addon cursor-pointer">
                                     <button class="search-form_submit fas fa-search font-size18 text-white" type="submit"></button>
                                 </span>
-                                <input type="text" class="search-form_input form-control margin-10px-lr" name="s" autocomplete="off" placeholder="Type & hit enter...">
+                                <input type="text" class="search-form_input form-control margin-10px-lr" name="s" autocomplete="off" placeholder="Type & hit enter..."/>
                                 <span class="input-group-addon close-search"><i class="fas fa-times font-size18 margin-5px-top"></i></span>
                             </div>
                         </form>
@@ -69,226 +67,123 @@
                         <div class="col-12 col-lg-12">
                             <div class="menu_area alt-font">
                                 <nav class="navbar navbar-expand-lg navbar-light no-padding">
-
                                     <div class="navbar-header navbar-header-custom">
                                         <!-- start logo -->
                                         <a href="harpa-home.html" class="navbar-brand"><img id="logo" src="./logo/HDE02.svg" alt="logo" width="170px" height="500px"></a>
                                         <!-- end logo -->
                                     </div>
-
-                                    <div class="navbar-toggler"></div>
                                 </nav>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </header>
         <!-- end header section -->
 
         <!-- start page title section -->
         <section class="page-title-section bg-img cover-background theme-overlay" data-overlay-dark="7" data-background="img/banner/bg9.jpg">
             <div class="container">
-
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Harpa transformación de variables</h1>
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- end page title section -->
         
-
         <!-- start project detail section -->
         <section>
-            <!--<div class="container">
+            <div class="container">
                 <div class="project-single">
-                    <div class="row project-single-text margin-2px-tb">
-                        <div class="col-lg-6 col-md-6">
-                            <h4 class="text-center">Acerca de HCluster</h4>
+                    <div class="row project-single-text margin-50px-tb sm-margin-30px-top sm-margin-50px-bottom xs-margin-30px-bottom">
+                        <div class="col-lg-7 col-md-12">
+                            <h4 class="text-center">Acerca de HTransfV</h4>
                             <p ALIGN="justify">
-                                Microservicio cuya funcionalidad sirva para generar una <b>clasificación de n cantidad de grupos</b> en base a la <b>técnica de clustering</b> que identifica de forma automática agrupaciones de elementos de acuerdo a una medida de similitud entre ellos, a través del uso de <b>algoritmo K-means</b> de clasificación no supervisada.
+                                Microservicio creado para transformar variables con diferentes tipos de distribución, linealidad y homocedasticidad, mediante el uso de cálculos matemáticos que aseguren una distribución normal al momento de ser reprentado gráficamente, conformada por tres servicios:
+                            <br>
+                                <table class="table table-center table-hover table-responsive-md table-bordered">
+                                    <thead class="text-center thead-dark">
+                                        <tr>
+                                            <th scope="col">Servicio</th>
+                                            <th scope="col">Concepto</th>
+                                            <th scope="col">Imagen</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <th scope="row" style="padding-top: 65px; padding-left: 5px"><strong>Normalización</strong></th>
+                                            <td><p ALIGN="justify" style="font-size: 13px; padding-top: 10px">Obtención de valores representados por rango de 0 a 1 mediante la implementación de fórmula matemática de resta.</p></td>
+                                            <td style="padding-top: 15px"><img id="estandar" src="./img/normalizar.jpg" alt=estandarización" width="500px"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" style="padding-top: 65px"><strong>Escalamiento</strong></th>
+                                            <td><small><p ALIGN="justify" style="font-size: 13px; padding-top: 10px">Análisis de valores a través de una serie de operaciones matemáticas para la integración de un rango númerico.</p></small></td>
+                                            <td style="padding-top: 35px"><img id="escalar" src="./img/esca.png" alt="escalamiento" width="200px"/></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center" scope="row" style="padding-top: 65px">Estandarización</th>
+                                            <td class="text-center"><small><p ALIGN="justify" style="font-size: 13px; padding-top: 18px">Método en el que se lleva a cabo una distribución de datos de manera homogenea logrando comprimir valores a un parámetro generalizado.</p></small></td>
+                                            <td style="padding-top: 15px"><img id="estandar" src="./img/degree.jpg" alt="estandarización" width="500px" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </p>
-                            <p ALIGN="justify" class="sm-margin-30px-bottom">En los que a través de la creación de un número de vectores se identifican los datos a analizar por el sistema, mismos que seran utilizados como características de entrada, dando inicio a la clusterización mostrando como resultado los grupos clasificados. </p>
-                            
-                             
-            <div class="col-lg-10 col-md-10">
-                <h4>Conocimiento técnico</h4>
-                <div class="project-single-info">
-                    <ul class="no-margin">
-                        <li><span class="value"><i class="fas fa-check"></i> Entender la lógica del uso del método de clusterización.</span></li>
-                        <li><span class="value"><i class="fas fa-check"></i> Conocimiento en algoritmo de K-means.</span></li>
-                    </ul>
-                </div>
-                <h4>Especificación técnica</h4>
-                <div class="project-single-info">
-                    <ul class="no-margin">
-                        <li><span class="vertical-align-top">URL:</span> <span class="value">192.168.100.3:9090/<br>harpa/hcluster</br></span></li>
-                        <li><span class="vertical-align-top">Método:</span> <span class="value">HTTP-REST POST</span></li>
-                    </ul>
+                            <p ALIGN="justify"><small>
+                                <strong style="color: red">*</strong> <em>Para llevar a cabo el análisis de la información unicamente se podrá seleccionar un método.</em></small>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 offset-lg-1">
+                            <h4 class="text-center">Aplicaciones</h4>
+        	                    <div class="project-single-info">
+                                    <ul class="no-margin">
+                                        <li><span class="value" ALIGN="justify"><i class="fas fa-check"></i> </span> Métodos de evaluación </li>
+                                        <li><span class="value"><i class="fas fa-check"></i> </span> Minería de datos</li>
+                                        <li><span class="value"><i class="fas fa-check"></i> </span> Aprendizaje automático</li>
+                                        <li><span class="value"><i class="fas fa-check"></i> </span> Inteligencia Artificial</li>
+                                    </ul>
+        	                    </div>
+                                <br>
+                            <h4 class="text-center">Especificación técnica</h4>
+                            <div class="project-single-info">
+                                <ul class="no-margin">
+                                    <li><span class="vertical-align-top">Servicios:</span> <span class="value">WEB API</span></li>
+                                    <li><span class="vertical-align-top">URL:</span> <span class="value"><mark>192.168.100.3:9090/harpa/htransfv</mark><br></span></li>
+                                    <li><span class="vertical-align-top">Métodos:</span> <span class="value">HTTP REST POST</span></li>
+                                </ul>
+                            </div>
+                            <br>
+                            <p ALIGN="justify"><small><em><strong>Nota:</strong> Este método puede ser combinado con otros métodos de análisis de datos para un mayor enfoque y estudio de la información requerida.</em></small></p>
+                            <br>
+    	                    <table class="table text-center table-responsive-md table-hover">
+                                <h4 class="text-center">Referencia</h4>
+    	                      	<tbody>
+                                      <tr class="text-center">
+                                        <td scope="col" style="font-size: 1rem">
+                                            <strong>Glosario</strong>
+                                        </td>
+                                        <td scope="col" style="font-size: 1rem"> 
+                                            <a href="Glosario.html"> <i class="fas fa-book fa-2x text-center" style="color:black"></i></a>
+                                        </td>
+                                    </tr>
+    		                        <tr>
+    		                            <td style="font-size: 1rem">
+    		                                <strong>Otras referencias</strong>
+    		                            </td>
+    		                            <td>
+    		                                <a href="https://es.wikipedia.org/wiki/Transformación_de_datos"> <i class="fab fa-wikipedia-w fa-2x" style="color:blue gray"></i></a> 
+    		                                <a href="https://es.wikihow.com/normalizar-un-vector"> <i class="fas fa-link fa-2x" style="color:grey"></i></a>
+    		                            </td>
+    		                        </tr>
+    	                    	</tbody>
+    	                    </table>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>-->
-
-        <div class="container">
-            <div class="project-single">
-                <div class="row project-single-text margin-50px-tb sm-margin-30px-top sm-margin-50px-bottom xs-margin-30px-bottom">
-                    <div class="col-lg-7 col-md-12">
-                        <h4 class="text-center">Acerca de HTransfV</h4>
-                        <p ALIGN="justify">
-                            Microservicio creado para transformar variables con diferentes tipos de distribución, linealidad y homocedasticidad, mediante el uso de cálculos matemáticos que aseguren una distribución normal al momento de ser reprentado gráficamente, conformada por tres servicios:
-                        <br>
-                            <table class="table table-center table-hover table-responsive-md table-bordered">
-                                <thead class="text-center thead-dark">
-                                    <tr>
-                                      <th scope="col">Servicio</th>
-                                      <th scope="col">Concepto</th>
-                                      <th scope="col">Imagen</th>
-                                      <!--<th scope="col">Glosario</th>-->
-                                    </tr>
-                                </thead>
-                                <tbody class="text-center">
-                                    <tr>
-                                        <th scope="row" style="padding-top: 65px; padding-left: 5px"><strong>Normalización</strong></th>
-                                        <td><p ALIGN="justify" style="font-size: 13px; padding-top: 10px">Obtención de valores representados por rango de 0 a 1 mediante la implementación de fórmula matemática de resta.</p></td>
-                                        <td style="padding-top: 15px"><img id="estandar" src="./img/normalizar.jpg" alt=estandarización" width="500px" /></td>
-                                    </tr>
-                                     <tr>
-                                      <th scope="row" style="padding-top: 65px"><strong>Escalamiento</strong></th>
-                                      <td><small><p ALIGN="justify" style="font-size: 13px; padding-top: 10px">Análisis de valores a través de una serie de operaciones matemáticas para la integración de un rango númerico.</p></small></td>
-                                      <td style="padding-top: 35px"><img id="escalar" src="./img/esca.png" alt="escalamiento" width="200px"/></td>
-                                    </tr>
-                                    <tr>
-                                      <th class="text-center" scope="row" style="padding-top: 65px">Estandarización</th>
-                                      <td class="text-center"><small><p ALIGN="justify" style="font-size: 13px; padding-top: 18px">Método en el que se lleva a cabo una distribución de datos de manera homogenea logrando comprimir valores a un parámetro generalizado.</p></small></td>
-                                      <td style="padding-top: 15px"><img id="estandar" src="./img/degree.jpg" alt="estandarización" width="500px" /></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        
-                        </p>
-                        <p ALIGN="justify"><small>
-                            <strong style="color: red">*</strong> <em>Para llevar a cabo el análisis de la información unicamente se podrá seleccionar un método.</em></small>
-                        </p>
-
-                    </div>
-                <div class="col-lg-4 col-md-4 offset-lg-1">
-                    <h4 class="text-center">Aplicaciones</h4>
-	                    <div class="project-single-info">
-                            <ul class="no-margin">
-                                <li><span class="value" ALIGN="justify"><i class="fas fa-check"></i> </span> Métodos de evaluación </li>
-                                <li><span class="value"><i class="fas fa-check"></i> </span> Minería de datos</li>
-                                <li><span class="value"><i class="fas fa-check"></i> </span> Aprendizaje automático</li>
-                                <li><span class="value"><i class="fas fa-check"></i> </span> Inteligencia Artificial</li>
-                            </ul>
-	                    </div>
-                            <br>
-                    <h4 class="text-center">Especificación técnica</h4>
-                        <div class="project-single-info">
-                            <ul class="no-margin">
-                                <li><span class="vertical-align-top">Servicios:</span> <span class="value">WEB API</span></li>
-                                <li><span class="vertical-align-top">URL:</span> <span class="value"><mark>192.168.100.3:9090/harpa/htransfv</mark><br></span></li>
-                                <li><span class="vertical-align-top">Métodos:</span> <span class="value">HTTP REST POST</span></li>
-                            </ul>
-                        </div>
-                        <br>
-                        <p ALIGN="justify"><small><em><strong>Nota:</strong> Este método puede ser combinado con otros métodos de análisis de datos para un mayor enfoque y estudio de la información requerida.</em></small></p>
-                            <br>
-	                    <table class="table text-center table-responsive-md table-hover">
-                            <h4 class="text-center">Referencia</h4>
-	                      	<tbody>
-                                  <tr class="text-center">
-                                    <td scope="col" style="font-size: 1rem">
-                                        <strong>Glosario</strong>
-                                    </td>
-                                    <td scope="col" style="font-size: 1rem"> 
-                                        <a href="Glosario.html"> <i class="fas fa-book fa-2x text-center" style="color:black"></i></a>
-                                    </td>
-                                </tr>
-		                        <tr>
-		                            <td style="font-size: 1rem">
-		                                <strong>Otras referencias</strong>
-		                            </td>
-		                            <td>
-		                                <a href="https://es.wikipedia.org/wiki/Transformación_de_datos"> <i class="fab fa-wikipedia-w fa-2x" style="color:blue gray"></i></a> 
-		                                <a href="https://es.wikihow.com/normalizar-un-vector"> <i class="fas fa-link fa-2x" style="color:grey"></i></a>
-		                            </td>
-		                        </tr>
-	                    	</tbody>
-	                    </table>
-                    </div>
-                        <!--<div class="col">
-                            <br>
-                            <h4 class="text-center">Ejemplo</h4>
-                            <table class="table table-responsive-md table-bordered">
-                                <thead class="text-center thead-dark">
-                                    <tr>
-                                        <th scope="col">Instrucciones</th>
-                                        <th scope="col">Código</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="text-center">
-                                    <tr id="miTablaPersonalizada">
-                                        <td>
-                                            <strong><p id="texto" ALIGN="justify" style="font-family: monospace; margin-top: 200"><br>Se cuenta con un conjunto de datos señalados en dos vectores denominados respectivamente <b>Variables Y y X</b>, en el que se generará la clasificación en cantidad de grupos determinada, los cuales seran utilizados como características de entrada:</br></p></strong>
-                                        </td>
-                                        <th> 
-                                            <p ALIGN="left" class="text-muted" style="font-family: monospace;">{ 
-                                                <br>&nbsp;<strong>"vars"</strong>: 
-                                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;{ 
-                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"Variable X"</strong>:[<mark>1,2,3,4,5</mark>],
-                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"Variable Y"</strong>:[<mark>2,4,6,8,10</mark>], 
-                                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;}, 
-                                                        <br>&nbsp;<strong>"grupos"</strong>:2
-                                                <br> &nbsp;} 
-                                            </p> 
-                                       </th>
-                                    </tr>
-                                    <tr id="miTabla">
-                                        <td>
-                                            <strong><p ALIGN="justify" style="font-family: monospace;">Una vez proporcionados los datos se da inicio a la clusterización usando el algoritmo de <em>K-means</em> quien se encargara de agrupar las observaciones por sus similitudes, de modo que el sistema muestre como resultado los grupos clasificados como características de salida:
-                                            </p></strong>
-                                        </td>
-                                        <th>
-                                            <p ALIGN="left" class="text-muted" style="font-family: monospace;">
-                                                <br>
-                                                    {
-   												<br>&nbsp;"exec": <br>&nbsp;&nbsp;{
-     												<br>&nbsp;&nbsp;&nbsp;"funcion": "HCluster",
-     												<br>&nbsp;&nbsp;&nbsp;"horafin": "2019-04-09 13:38:26.197244",
-     												<br>&nbsp;&nbsp;&nbsp;"horainicio": "2019-04-09 13:38:26.187308",
-     												<br>&nbsp;&nbsp;&nbsp;"tiempoexec": "0:00:00.009936"
-   												<br>&nbsp;&nbsp;},
-   												<br>&nbsp;&nbsp;"result": <br>&nbsp;&nbsp;{
-     												<br>&nbsp;&nbsp;&nbsp;"attach": {},
-     												<br>&nbsp;&nbsp;&nbsp;"vars": 
-                                            <br>&nbsp;&nbsp;&nbsp;{
-                                                <br><b>&nbsp;&nbsp;&nbsp;&nbsp;"cluster"</b>: <strong>[0,0,1,1,1]</strong>
-                                            <br>&nbsp;&nbsp;&nbsp;}
-                                            	<br>&nbsp;&nbsp;}
-                                            <br>&nbsp;}
-                                                        
-                                                <br>
-                                            </p>
-                                        </th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-
-
-
         </section>
         <!-- end project detail section -->
-
-
-
 
         <!-- start how it work section -->
         <section class="bg-light-gray">
@@ -362,7 +257,7 @@
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;}
                                             <br>}
                                         </div>
-                                        <small><p ALIGN="justify"><strong>*Nota: </strong>Para aplicar el método 2 (escalamiento), será necesario incluir los parámetros del mínimo y máximo númerico de los rangos a graficar, identificados como NvoMin y NvoMax.</small>  
+                                        <p ALIGN="justify"><small><strong>*Nota: </strong>Para aplicar el método 2 (escalamiento), será necesario incluir los parámetros del mínimo y máximo númerico de los rangos a graficar, identificados como NvoMin y NvoMax.</small>  
                                         </p>
                                     </div>
                                 </div>
@@ -401,7 +296,6 @@ cache-control: no-cache
                                     <div class="col-lg-12 offset-lg-1">
                                         <h5>Llamada desde Python?</h5>
                                         <p>Copia, pega y ejecuta!</p>
-
                                        <textarea id="pythoncode" name="pythoncode" style="height:550px">
                                         {
 import requests
@@ -451,20 +345,19 @@ if response.status_code == 200:
                 indentUnit: 4,
                 matchBrackets: true
             });
-        
         </script>
         <!-- start footer section -->
-         <footer>
-        <div class="container">
-            <p class="xs-font-size13" ALIGN="right"> Versión - 1.2</p>
-            <p class="xs-font-size13" ALIGN="right"> Fecha última actualización - 15/04/2019</p>
-        </div>
-        <div class="footer-bar">
+        <footer>
             <div class="container">
-                <p class="xs-font-size13">&copy; 2019 HDE Professional Services - Harpa</p>
+                <p class="xs-font-size13" ALIGN="right"> Versión - 1.2</p>
+                <p class="xs-font-size13" ALIGN="right"> Fecha última actualización - 15/04/2019</p>
             </div>
-        </div>
-    </footer>
+            <div class="footer-bar">
+                <div class="container">
+                    <p class="xs-font-size13">&copy; 2019 HDE Professional Services - Harpa</p>
+                </div>
+            </div>
+        </footer>
         <!-- end footer section -->
 
     </div>

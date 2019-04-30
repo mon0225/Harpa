@@ -33,10 +33,12 @@
 
 <body>
 
-    <header>
+    <!-- start main-wrapper section -->
+    <div class="main-wrapper">
 
+        <!-- start header section -->
+        <header>
             <div class="navbar-default">
-
                 <!-- start top search -->
                 <div class="top-search bg-theme">
                     <div class="container">
@@ -58,7 +60,6 @@
                         <div class="col-12 col-lg-12">
                             <div class="menu_area alt-font">
                                 <nav class="navbar navbar-expand-lg navbar-light no-padding">
-
                                     <div class="navbar-header navbar-header-custom">
                                         <!-- start logo -->
                                         <a href="harpa-home.html" class="navbar-brand"><img id="logo" src="./logo/HDE02.svg" alt="logo" width="170px" height="500px"></a>
@@ -70,14 +71,12 @@
                     </div>
                 </div>
             </div>
-
         </header>
         <!-- end header section -->
 
         <!-- start page title section -->
         <section class="page-title-section bg-img cover-background theme-overlay" data-overlay-dark="7" data-background="img/banner/bg9.jpg">
             <div class="container">
-
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Harpa</h1>
@@ -87,7 +86,6 @@
         </section>
         <!-- end page title section -->
         
-
         <!-- start project detail section -->
         <section>
             <div class="container">
@@ -102,10 +100,9 @@
                             <table class="table table-center table-hover table-responsive-md table-bordered">
                                 <thead class="text-center thead-dark">
                                     <tr>
-                                      <th scope="col">N°</th>
-                                      <th scope="col">Microservicio</th>
-                                      <th scope="col">Link</th>
-                                      <!--<th scope="col">Glosario</th>-->
+                                        <th scope="col">N°</th>
+                                        <th scope="col">Microservicio</th>
+                                        <th scope="col">Link</th>
                                     </tr>
                                 </thead>
                                 <tbody class="text-center">
@@ -114,46 +111,39 @@
                                         <td><a href="HCluster.html">HCluster <br>(Clusterización)</a></td>
                                         <td style="padding-top: 25px"><a href="HCluster.html"><i class="far fa-object-group fa-2x"></i></a></td>
                                     </tr>
-                                     <tr>
-                                      <th scope="row" style="padding-top: 25px"><strong><a href="HRegLinSimple.html">2</a></strong></th>
-                                      <td><a href="HRegLinSimple.html">HRegLinSimple <br>(Regresión lineal simple)</a></td>
-                                      <td style="padding-top: 25px"><a href="HRegLinSimple.html"><i class="fas fa-chart-line fa-2x"></i></a></td>
+                                    <tr>
+                                        <th scope="row" style="padding-top: 25px"><strong><a href="HRegLinSimple.html">2</a></strong></th>
+                                        <td><a href="HRegLinSimple.html">HRegLinSimple <br>(Regresión lineal simple)</a></td>
+                                        <td style="padding-top: 25px"><a href="HRegLinSimple.html"><i class="fas fa-chart-line fa-2x"></i></a></td>
                                     </tr>
                                     <tr>
-                                      <th class="text-center" scope="row" style="padding-top: 25px"><a href="HRegLinMultiple.html">3</a></th>
-                                      <td class="text-center"><a href="HRegLinMultiple.html">HRegLinMúltiple <br>(Regresión lineal múltiple)</a></td>
-                                      <td style="padding-top: 25px"><a href="HRegLinMultiple.html"><i class="far fa-chart-bar fa-2x"></i></a></td>
+                                        <th class="text-center" scope="row" style="padding-top: 25px"><a href="HRegLinMultiple.html">3</a></th>
+                                        <td class="text-center"><a href="HRegLinMultiple.html">HRegLinMúltiple <br>(Regresión lineal múltiple)</a></td>
+                                        <td style="padding-top: 25px"><a href="HRegLinMultiple.html"><i class="far fa-chart-bar fa-2x"></i></a></td>
                                     </tr>
                                     <tr>
-                                      <th class="text-center" scope="row" style="padding-top: 25px"><a href="HTransfV.html">4</a></th>
-                                      <td class="text-center"><a href="HTransfV.html">HTransfV <br>(Transformación de variable)</a></td>
-                                      <td style="padding-top: 25px"><a href="HTransfV.html"><i class="fas fa-shapes fa-2x"></i></a></td>
+                                        <th class="text-center" scope="row" style="padding-top: 25px"><a href="HTransfV.html">4</a></th>
+                                        <td class="text-center"><a href="HTransfV.html">HTransfV <br>(Transformación de variable)</a></td>
+                                        <td style="padding-top: 25px"><a href="HTransfV.html"><i class="fas fa-shapes fa-2x"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <br>
-                        </div>
-                    <div class="col-lg-4 col-md-4 offset-lg-1">
-                        <h4 class="text-center">Aréas de conocimiento</h4>
-                        <div class="project-single-info">
-                            <ul class="no-margin">
-                                <li><span class="value"><i class="fas fa-check"></i> Minería de datos.</span></li>
-                                <li><span class="value"><i class="fas fa-check"></i> Machine Learning.</span></li>
-                                <li><span class="value"><i class="fas fa-check"></i> Deep Learning.</span>
-                                    <!--<br><ul class="margin-60px-left">
-                                        <li><medium>Uso de API.</medium></li>
-                                        <li><medium>Algoritmo de K-means.</medium></li>
-                                        <li><medium>Lenguajes de programación.</medium></li>
-                                    </ul>-->
-                                </li>
-                            </ul>
-                        </div>
                         <br>
+                        </div>
+                        <div class="col-lg-4 col-md-4 offset-lg-1">
+                            <h4 class="text-center">Aréas de conocimiento</h4>
+                            <div class="project-single-info">
+                                <ul class="no-margin">
+                                    <li><span class="value"><i class="fas fa-check"></i> Minería de datos.</span></li>
+                                    <li><span class="value"><i class="fas fa-check"></i> Machine Learning.</span></li>
+                                    <li><span class="value"><i class="fas fa-check"></i> Deep Learning.</span></li>
+                                </ul>
+                            </div>
+                            <br>
                             <h4 class="text-center">Características</h4>
                             <div class="project-single-info">
                                 <ul class="no-margin">
                                     <li><span class="vertical-align-top">Tipo de servicio:</span> <span class="value">WEB API</span></li>
-                                    <!--<li><span class="vertical-align-top">URL Base:</span> <span class="value">harpa.hde.mx/harpa<br></span></li>-->
                                     <li><span class="vertical-align-top">Métodos:</span><span class="value">HTTP POST</span></li>
                                 </ul>
                             </div>
@@ -163,19 +153,19 @@
             </div>
         </section>
 
-    <!-- start footer section -->
-    <footer>
-        <div class="container">
-            <p class="xs-font-size13" ALIGN="right"> Versión - 1.2</p>
-            <p class="xs-font-size13" ALIGN="right"> Fecha última actualización - 15/04/2019</p>
-        </div>
-        <div class="footer-bar">
+        <!-- start footer section -->
+        <footer>
             <div class="container">
-                <p class="xs-font-size13">&copy; 2019 HDE Professional Services - Harpa</p>
+                <p class="xs-font-size13" ALIGN="right"> Versión - 1.2</p>
+                <p class="xs-font-size13" ALIGN="right"> Fecha última actualización - 30/04/2019</p>
             </div>
-        </div>
-    </footer>
-    <!-- end footer section -->
+            <div class="footer-bar">
+                <div class="container">
+                    <p class="xs-font-size13">&copy; 2019 HDE Professional Services - Harpa</p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer section -->
 
     <!-- start scroll to top -->
     <a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
