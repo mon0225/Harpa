@@ -305,15 +305,65 @@
                                 <div class="row">
                                     <div class="col-lg-12 offset-lg-1" >
                                         <h5>Ejemplo de uso</h5>
-                                        <!--<p ALIGN="justify">
-                                            El problema se centra en determinar la relación causal entre las ventas de productos con respecto a los ingresos que la población percibe, conformado por la variable de ventas (dependiente) y la variable de población(independiente).
+                                        <p ALIGN="justify">
+                                            Este ejemplo se centra en determinar la transformación de las variables ventas de productos e ingresos percibidos por la población, identificados por la variable dependiente (ventas) y la variable independiente (población), estableciendo el mejor rango para graficar a través de la selección del método a usar (0: Estandarización, 1: Normalización y 2: Escalamiento) guardado en la variable tipo.
                                         </p>
                                        
                                         <div class="card">
-                                            
+                                            <strong>Entrada:</strong>
+                                            {
+                                                <br>&nbsp;&nbsp;"vars":{
+                                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Población":[2,6,8,8,12,16,20,20,22,26],
+                                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Ventas":[58,105,88,118,117,137,157,169,149,202]
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+                                                <br>&nbsp;&nbsp;"tipo": 2,
+                                                <br>&nbsp;&nbsp;"NvoMin": 0,
+                                                <br>&nbsp;&nbsp;"NvoMax": 100
+                                            <br>}
+
+                                            <strong>Salida:</strong>
+                                            {
+                                                <br>&nbsp;&nbsp;"output": {
+                                                    <br>&nbsp;&nbsp;"exec": {
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"funcion": "HTransfV", 
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"horafin": "2019-04-29 18:55:18.616187", 
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"horainicio": "2019-04-29 18:55:18.268975", 
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tiempoexec": "0:00:00.347212"
+                                                  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, 
+                                                    <br>&nbsp;&nbsp;"result": {
+                                                        <br>&nbsp;&nbsp;"attach": {}, 
+                                                        <br>&nbsp;&nbsp;"vars": {
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Poblaci\u00f3n": [
+                                                            0.0, 
+                                                            16.666666666666664, 
+                                                            25.0, 
+                                                            25.0, 
+                                                            41.66666666666667, 
+                                                            58.333333333333336, 
+                                                            75.0, 
+                                                            75.0, 
+                                                            83.33333333333334, 
+                                                            100.0
+                                                        ], 
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Ventas": [
+                                                            0.0, 
+                                                            32.63888888888889, 
+                                                            20.833333333333336, 
+                                                            41.66666666666667, 
+                                                            40.97222222222222, 
+                                                            54.861111111111114, 
+                                                            68.75, 
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;77.08333333333334, 
+                                                            63.19444444444444, 
+                                                            100.0
+                                                        ]
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;}
+                                            <br>}
                                         </div>
-                                        <small><p ALIGN="justify"><strong>*Nota: </strong>Para aplicar este método, es importante que los datos tengan un patrón de linealidad.</small>  
-                                        </p>-->
+                                        <small><p ALIGN="justify"><strong>*Nota: </strong>Para aplicar el método 2 (escalamiento), será necesario incluir los parámetros del mínimo y máximo númerico de los rangos a graficar, identificados como NvoMin y NvoMax.</small>  
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -322,28 +372,29 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 offset-lg-1" >
-                                    <h5>Llamada a hreglinsimple</h5>
-                                    <p>Ejemplo convencional de la llamada HTTP al microservicio hreglin.</p>
+                                    <h5>Llamada a htransfv</h5>
+                                    <p>Ejemplo convencional de la llamada HTTP al microservicio htransfv.</p>
 
-                                    <!--<textarea id="httpcode" name="httpcode" style="height:550px">
-POST /harpa/hreglin HTTP/1.1
+                                    <textarea id="httpcode" name="httpcode" style="height:550px">
+POST /harpa/htransfv HTTP/1.1
 Host: harpa.hde.mx
 Content-Type: application/json
 cache-control: no-cache
 
 {
-    "vars": {
-                   
-"Población":[2,6,8,8,12,16,20,20,22,26],
-"Ventas":[58,105,88,118,117,137,157,169,149,202]
-    },
+   "vars":{
+      "Población":[2,6,8,8,12,16,20,20,22,26],
+      "Ventas":[58,105,88,118,117,137,157,169,149,202]
+   },
+   "tipo":2,
+   "NvoMin":0,
+   "NvoMax":100
 }
-</textarea>-->
-
-                                    </div>
+                                    </textarea>
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <div>
                             <div class="container">
                                 <div class="row">
@@ -351,24 +402,26 @@ cache-control: no-cache
                                         <h5>Llamada desde Python?</h5>
                                         <p>Copia, pega y ejecuta!</p>
 
-                                       <!-- <textarea id="pythoncode" name="pythoncode" style="height:550px">
-
+                                       <textarea id="pythoncode" name="pythoncode" style="height:550px">
+                                        {
 import requests
 import json
 
-url="http://192.168.100.3:9090/harpa/hreglin"
+url="http://192.168.100.3:9090/harpa/htransfv"
 pob=[2,6,8,8,12,16,20,20,22,26]
 vtas=[58,105,88,118,117,137,157,169,149,202]
-payload={"vars":{"Población":pob,"Ventas":vtas}}
+tipo=[2]
+nvomin=[0]
+nvomax=[100]
+payload={"vars":{"Población":pob,"Ventas":vtas,"Tipo":tipo,"NvoMin":nvomin, "NvoMax":nvomax}}
 headers={'Content-Type':'application/json','Accept-Charset':'UTF-8'}
 
 response=requests.post(url,json=payload,headers=headers)
 
 if response.status_code == 200:
    print(response.content.decode())
-                      
-                                                                    
-                                        </textarea>-->
+                                            
+                                        </textarea>
                                     </div>
                                 </div>
                             </div>
