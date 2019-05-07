@@ -246,50 +246,48 @@
                                                 <br>&nbsp;}
                                             </p>
                                         </div>
-                                        <p ALIGN="justify"><small><strong>*Nota: </strong>Para aplicar este método, es importante que los datos tengan un patrón de linealidad.</small>  
+                                        <p ALIGN="justify">
+                                            <small><strong>*Nota: </strong>Para aplicar este método, es importante que los datos tengan un patrón de linealidad.</small>  
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 offset-lg-1" >
-                                    <h5>Llamada a hreglinsimple</h5>
-                                    <p>Ejemplo convencional de la llamada HTTP al microservicio hreglin.</p>
-
-                                    <textarea id="httpcode" name="httpcode" style="height:550px">
-POST /harpa/hreglin HTTP/1.1
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12 offset-lg-1">
+                                        <h5>Llamada a htransfv</h5>
+                                        <p>Ejemplo convencional de la llamada HTTP al microservicio htransfv.</p>
+                                        <textarea id="httpcode" name="httpcode" style="height:550px">
+POST /harpa/hreglinsim HTTP/1.1
 Host: harpa.hde.mx
 Content-Type: application/json
 cache-control: no-cache
 
 {
-    "vars": {
-                   
-"Población":[2,6,8,8,12,16,20,20,22,26],
-"Ventas":[58,105,88,118,117,137,157,169,149,202]
-    },
+   "vars": {
+      "Población":[2,6,8,8,12,16,20,20,22,26],
+      "Ventas":[58,105,88,118,117,137,157,169,149,202]
+   },
 }
-                                    </textarea>
+                                        </textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 offset-lg-1">
-                                    <h5>Llamada desde Python?</h5>
-                                    <p>Copia, pega y ejecuta!</p>
-                                    <textarea id="pythoncode" name="pythoncode" style="height:550px">
-
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12 offset-lg-1">
+                                        <h5>Llamada desde Python?</h5>
+                                        <p>Copia, pega y ejecuta!</p>
+                                       <textarea id="pythoncode" name="pythoncode" style="height:550px">
+{
 import requests
 import json
 
-url="http://192.168.100.3:9090/harpa/hreglin"
+url="http://harpa_api.hde.mx/harpa/hreglinsim"
 pob=[2,6,8,8,12,16,20,20,22,26]
 vtas=[58,105,88,118,117,137,157,169,149,202]
 payload={"vars":{"Población":pob,"Ventas":vtas}}
@@ -299,9 +297,8 @@ response=requests.post(url,json=payload,headers=headers)
 
 if response.status_code == 200:
    print(response.content.decode())
-                      
-                                                                    
-                                    </textarea>
+                                        </textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
