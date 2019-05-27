@@ -138,7 +138,7 @@
                                 <div class="project-single-info">
                                     <ul class="no-margin">
                                         <li><span class="vertical-align-top">Servicios:</span> <span class="value">WEB API</span></li>
-                                        <li><span class="vertical-align-top">URL:</span> <span class="value">harpa_api.hde.mx/harpa/hreglinsimp<br></span></li>
+                                        <li><span class="vertical-align-top">URL:</span> <span class="value" style="margin-left: 30px">harpa_api.hde.mx/harpa/hreglinsimp<br></span></li>
                                         <li><span class="vertical-align-top">Métodos:</span> <span class="value">HTTP REST POST</span></li>
                                     </ul>
                                 </div>
@@ -199,7 +199,7 @@
                                     <div class="col-lg-12 offset-lg-1" >
                                          <h5>Ejemplo de uso</h5>
                                         <p ALIGN="justify">
-                                            El problema se centra en determinar la relación causal entre las ventas de productos con respecto a los ingresos que la población percibe, conformado por la variable de ventas (dependiente) y la variable de población(independiente).
+                                            El problema se centra en determinar la relación causal entre las ventas de productos con respecto a los ingresos que la población percibe, conformado por la variable de ventas (dependiente) y la variable de población (independiente).
                                         </p>
                                        
                                         <div class="card">
@@ -209,7 +209,7 @@
                                                 <br><strong>&nbsp;&nbsp;"vars"</strong>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
                                                 <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Población"</b>: [2,6,8,8,12,16,20,20,22,26],
                                                 <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Ventas"</b>: [58,105,88,118,117,137,157,169,149,202],<br>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;}
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;<strong>"BGraficas"</strong>: true,<br>&nbsp;}
                                                 <br>
                                                 <br>
                                                 <strong>&nbsp; Salida</strong>:
@@ -217,32 +217,27 @@
                                                 <br>&nbsp;&nbsp;"output": {
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"exec": {
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"funcion": "HRegLin",
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"horafin": "2019-04-11 13:20:48.288488",
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"horainicio": "2019-04-11 13:20:48.120238",
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tiempoexec": "0:00:00.168250"
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"horafin": "2019-05-16 11:34:54.470578",
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"horainicio": "2019-05-16 11:34:54.302622",
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tiempoexec": "0:00:00.167956"
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"result": {
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"vars": {
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"b0": 60.0,
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"b1": 5.0,
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"r2": 0.9027336300063571
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"b0": 0.0,
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"b1": 2.0,
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"r2": 0.9999999999999998
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"attach": {
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"content": {
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "hreglin.svg",
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "image/svg+xml",
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "content": 
-                                                <!-- "<svg height=\"345.6pt\" version=\"1.1\" 
-                                                viewBox=\"0 0 460.8 345.6\" width=\"460.8pt\" 
-                                                xmlns=\"http://www.w3.org/2000/svg\" 
-                                                xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n <defs>\n  <style 
-                                                type=\"text/css\">\n*{stroke-linecap:butt;stroke-linejoin:round;}\n  
-                                                </style>\n </defs>\n <g id=\"figure_1\">\n  <g id=\"patch_1\">\n   <path 
-                                                d=\"M 0 345.6 \nL 460.8 345.6 \nL 460.8 0 \nL 0 0 \nz\n\" -->
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"contents": [
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"content": <code style="color: grey; font-size: 1.1em;">"&lt;svg ...>...&lt;/svg>\n",</code>
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "hreglin.svg",
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "image/svg+xml"
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                                <br>&nbsp;&nbsp;&nbsp;}
                                                 <br>&nbsp;}
                                             </p>
                                         </div>
@@ -257,10 +252,10 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12 offset-lg-1">
-                                        <h5>Llamada a htransfv</h5>
-                                        <p>Ejemplo convencional de la llamada HTTP al microservicio htransfv.</p>
+                                        <h5>Llamada a hreglinsim</h5>
+                                        <p>Ejemplo convencional de la llamada HTTP al microservicio hreglinsim.</p>
                                         <textarea id="httpcode" name="httpcode" style="height:550px">
-POST /harpa/hreglinsim HTTP/1.1
+POST /harpa/hreglin HTTP/1.1
 Host: harpa.hde.mx
 Content-Type: application/json
 cache-control: no-cache
@@ -270,6 +265,7 @@ cache-control: no-cache
       "Población":[2,6,8,8,12,16,20,20,22,26],
       "Ventas":[58,105,88,118,117,137,157,169,149,202]
    },
+   "BGraficas": true
 }
                                         </textarea>
                                     </div>
@@ -283,14 +279,17 @@ cache-control: no-cache
                                         <h5>Llamada desde Python?</h5>
                                         <p>Copia, pega y ejecuta!</p>
                                        <textarea id="pythoncode" name="pythoncode" style="height:550px">
-{
+
+
+                                        <!--Probar el código para confirmar si la redacción de Python es correcta.-->
 import requests
 import json
 
 url="http://harpa_api.hde.mx/harpa/hreglinsim"
 pob=[2,6,8,8,12,16,20,20,22,26]
 vtas=[58,105,88,118,117,137,157,169,149,202]
-payload={"vars":{"Población":pob,"Ventas":vtas}}
+BGraficas= true
+payload={"vars":{"Población":pob,"Ventas":vtas}, "BGraficas"}
 headers={'Content-Type':'application/json','Accept-Charset':'UTF-8'}
 
 response=requests.post(url,json=payload,headers=headers)

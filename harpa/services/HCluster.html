@@ -163,7 +163,7 @@
                                 <tbody class="text-center">
                                     <tr id="miTablaPersonalizada">
                                         <td>
-                                            <p id="texto" ALIGN="justify" style="font-family: monospace; margin-top: 200"><strong><br>Se cuenta con un conjunto de datos señalados en dos vectores denominados respectivamente <b>Variables Y y X</b>, en el que se generará la clasificación en cantidad de grupos determinada, los cuales seran utilizados como características de entrada:</strong></p>
+                                            <p id="texto" ALIGN="justify" style="font-family: monospace;"><br>Se cuenta con un conjunto de datos señalados en dos vectores denominados respectivamente <b>Variables Y y X</b>, en el que se generará la clasificación en cantidad de grupos determinada, los cuales seran utilizados como características de entrada:</p>
                                         </td>
                                         <th> 
                                             <p ALIGN="left" class="text-muted" style="font-family: monospace;">{ 
@@ -172,31 +172,44 @@
                                                         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"Variable X"</strong>:[<mark>1,2,3,4,5</mark>],
                                                         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"Variable Y"</strong>:[<mark>2,4,6,8,10</mark>]
                                                     <br>&nbsp;&nbsp;&nbsp;&nbsp;}, 
+                                                        <br>&nbsp;<mark>"BGraficas"</mark>:true,  
                                                         <br>&nbsp;<strong>"grupos"</strong>:2
                                                 <br> &nbsp;} 
                                             </p> 
                                        </th>
                                     </tr>
-                                    <tr id="miTabla">
+                                 <tr id="miTabla">
                                         <td>
                                             <strong><p ALIGN="justify" style="font-family: monospace;">Una vez proporcionados los datos se da inicio a la clusterización usando el algoritmo de <em>K-means</em> quien se encargara de agrupar las observaciones por sus similitudes, de modo que el sistema muestre como resultado los grupos clasificados como características de salida:
                                             </p></strong>
                                         </td>
                                         <th>
                                             <p ALIGN="left" class="text-muted" style="font-family: monospace;">
-                                                <br>
                                                     {
    												<br>&nbsp;"exec": <br>&nbsp;&nbsp;{
      												<br>&nbsp;&nbsp;&nbsp;"funcion": "HCluster",
-     												<br>&nbsp;&nbsp;&nbsp;"horafin": "2019-04-09 13:38:26.197244",
-     												<br>&nbsp;&nbsp;&nbsp;"horainicio": "2019-04-09 13:38:26.187308",
-     												<br>&nbsp;&nbsp;&nbsp;"tiempoexec": "0:00:00.009936"
+     												<br>&nbsp;&nbsp;&nbsp;"horafin": "2019-05-16 11:38:56.753502",
+     												<br>&nbsp;&nbsp;&nbsp;"horainicio": "2019-05-16 11:38:55.111873",
+     												<br>&nbsp;&nbsp;&nbsp;"tiempoexec": "0:00:01.641629"
    												<br>&nbsp;&nbsp;},
    												<br>&nbsp;&nbsp;"result": <br>&nbsp;&nbsp;{
-     												<br>&nbsp;&nbsp;&nbsp;"attach": {},
+     												<br>&nbsp;&nbsp;&nbsp;<mark>"attach"</mark>: {
+                                                    "contents": [
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"content": <code style="color: grey; font-size: 1em;">"&lt;svg ...>...&lt;/svg>\n",</code>
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "res.svg", 
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "image/svg+xml"
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"content": <code style="color: grey; font-size: 1em;">"&lt;svg ...>...&lt;/svg>\n",</code>
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "res.svg", 
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "image/svg+xml"
+                                                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+                                                   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+                                                <br>&nbsp;&nbsp;&nbsp;},
      												<br>&nbsp;&nbsp;&nbsp;"vars": 
                                             <br>&nbsp;&nbsp;&nbsp;{
-                                                <br><b>&nbsp;&nbsp;&nbsp;&nbsp;"cluster"</b>: <strong>[0,0,1,1,1]</strong>
+                                                <br><b>&nbsp;&nbsp;&nbsp;&nbsp;"cluster"</b>: <strong>[1,1,1,0,0]</strong>
                                             <br>&nbsp;&nbsp;&nbsp;}
                                             	<br>&nbsp;&nbsp;}
                                             <br>&nbsp;}    
@@ -206,6 +219,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <p><small><strong><i class="fas fa-asterisk fa-small"></i>Nota:</strong> En caso de ser verdadero o falso la opción de BGraficas el resultado se verá reflejado en el contenido de "attach".</small></p>
                         </div>
                     </div>
                 </div>
@@ -218,9 +232,9 @@
             <div class="container-fluid no-padding xs-padding-15px-lr">
                 <div class="horizontaltab tab-style">
                     <ul class="resp-tabs-list hor_1">
-                        <li><i class="far fa-chart-bar text-theme-color"></i><span class="display-block xs-display-inline-block">Caso de uso</span></li>
-                        <li><i class="fas fa-code text-theme-color"></i><span class="display-block xs-display-inline-block">HTTP</span></li>
-                        <li><i class="fab fa-python"></i><span class="display-block xs-display-inline-block">Python</span></li>
+                        <li><i class="far fa-chart-bar fa-2x"></i><span class="display-block xs-display-inline-block">Caso de uso</span></li>
+                        <li><i class="fas fa-code fa-2x"></i><span class="display-block xs-display-inline-block">HTTP</span></li>
+                        <li><i class="fab fa-python fa-2x"></i><span class="display-block xs-display-inline-block">Python</span></li>
                     </ul>
                     <div class="resp-tabs-container hor_1">
                         <div>
@@ -234,16 +248,16 @@
                                             <p class="text-muted"><br>
                                                 <strong>&nbsp; Entrada:</strong> 
                                                 <br>&nbsp;{
-                                                <br><strong>&nbsp;&nbsp;"vars"</strong>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
-                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Largo de sépalo"</b>: [ <small>5.1,4.9,4.7,4.6,5.0,5.4,4.6,5.0,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5.0,5.0,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5.0,5.5,4.9,4.4,5.1,5.0,4.5,4.4,5.0,5.1,4.8,5.1,4.6,5.3,5.0,7.0,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5.0,5.9,6.0,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6.0,5.7,5.5,5.5,5.8,6.0,5.4,6.0,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5.0,5.6,5.7,5.7,6.25.1,5.7,6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6.0,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6.0,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],</small>
-                                                <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Ancho de sépalo"</b>: [ <small>
+                                                <br>&nbsp;&nbsp;"vars":<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>"Largo de sépalo"</small>: [ <small>5.1,4.9,4.7,4.6,5.0,5.4,4.6,5.0,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5.0,5.0,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5.0,5.5,4.9,4.4,5.1,5.0,4.5,4.4,5.0,5.1,4.8,5.1,4.6,5.3,5.0,7.0,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5.0,5.9,6.0,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6.0,5.7,5.5,5.5,5.8,6.0,5.4,6.0,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5.0,5.6,5.7,5.7,6.25.1,5.7,6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6.0,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6.0,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],</small>
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>"Ancho de sépalo"</small>: [ <small>
                                                 3.5,3.0,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3.0,3.0,4.0,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3.0,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.6,3.0,3.4,3.5,2.3,3.2,3.5,3.8,3.0,3.8,3.2,3.7,3.3,3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2.0,3.0,2.2,2.9,2.9,3.1,3.0,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3.0,2.8,3.0,2.9,2.6,2.4,2.4,2.7,2.7,3.0,3.4,3.1,2.3,3.0,2.5,2.6,3.0,2.6,2.3,2.7,3.0,2.9,2.9,2.5,2.8,3.3,2.7,3.0,2.9,3.0,3.0,2.5,2.9,2.5,3.6,3.2,2.7,3.0,2.5,2.8,3.2,3.0,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3.0,2.8,3.0,2.8,3.8,2.8,2.8,2.6,3.0,3.4,3.1,3.0,3.1,3.1,3.1,2.7,3.2,3.3,3.0,2.5,3.0,3.4,3.0],<br></small>
 
-                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Largo de pétalo"</b>: [ <small>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>"Largo de pétalo"</small>: [ <small>
                                                 1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1.0,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.4,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4,4.7,4.5,4.9,4.0,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4.0,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4.0,4.9,4.7,4.3,4.4,4.8,5.0,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4.0,4.4,4.6,4.0,3.3,4.2,4.2,4.2,4.3,3.0,4.1,6.0,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5.0,5.1,5.3,5.5,6.7,6.9,5.0,5.7,4.9,6.7,4.9,5.7,6.0,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5.0,5.2,5.4,5.1 ],<br></small>
-                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Ancho de pétalo"</b>: [ <small>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>"Ancho de pétalo"</small>: [ <small>
                                                 0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.2,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2,1.4,1.5,1.5,1.3,1.5,1.3,1.6,1.0,1.3,1.4,1.0,1.5,1.0,1.4,1.3,1.4,1.5,1.0,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1.0,1.1,1.0,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1.0,1.3,1.2,1.3,1.3,1.1,1.3,2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2.0,1.9,2.1,2.0,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2.0,2.0,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2.0,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2.0,2.3,1.8 </small> ]
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br><strong>&nbsp;&nbsp;"grupos"</strong>: 3<br>&nbsp;}
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;"BGraficas": true,<br>&nbsp;&nbsp;"grupos": 3<br>&nbsp;}
                                                 <br>
                                                 <br>
                                                 <strong>&nbsp; Salida</strong>:
@@ -255,7 +269,18 @@
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tiempoexec": "0:00:00.009936"
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
                                                 <br>&nbsp;&nbsp;"result": {
-                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"attach": {},
+                                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"attach": { "contents": [
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+                                                        "content": <code style="color: grey; font-size: 1.1em;">"&lt;svg ...>...&lt;/svg>\n",</code>
+                                                        "name": "res.svg", 
+                                                        "type": "image/svg+xml"
+                                                      },
+                                                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+                                                        "content": <code style="color: grey; font-size: 1.1em;">"&lt;svg ...>...&lt;/svg>\n",</code>
+                                                        "name": "vars-0-1.svg", 
+                                                        "type": "image/svg+xml"
+                                                      }
+                                                   ] },
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"vars": 
                                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
                                                 <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"cluster"</b>: <strong>[ <small>
@@ -293,6 +318,8 @@ cache-control: no-cache
                
  "Ancho de pétalo":[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.2,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2,1.4,1.5,1.5,1.3,1.5,1.3,1.6,1.0,1.3,1.4,1.0,1.5,1.0,1.4,1.3,1.4,1.5,1.0,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1.0,1.1,1.0,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1.0,1.3,1.2,1.3,1.3,1.1,1.3,2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2.0,1.9,2.1,2.0,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2.0,2.0,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2.0,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2.0,2.3,1.8]
         },
+
+        "BGraficas":true,
         "grupos":3
 }
                                             </textarea>
@@ -324,6 +351,7 @@ payload = {
         "Largo de pétalo":LarPet,
         "Ancho de pétalo":AncPet
     },
+    "BGraficas":true,
     "grupos":3
 }
 
@@ -373,7 +401,7 @@ print(response.text)
         <footer>
             <div class="container">
                 <p class="xs-font-size13" ALIGN="right"> Versión - 1.2</p>
-                <p class="xs-font-size13" ALIGN="right"> Fecha última actualización - 30/04/2019</p>
+                <p class="xs-font-size13" ALIGN="right"> Fecha última actualización - 17/05/2019</p>
             </div>
             <div class="footer-bar">
                 <div class="container">
